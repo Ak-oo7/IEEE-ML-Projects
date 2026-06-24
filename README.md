@@ -1,6 +1,6 @@
 # 🤖 IEEE AI/ML/DL Internship — Machine Learning Projects
 
-This repository contains three end-to-end Machine Learning projects developed during the **IEEE AI/ML/DL Internship Program**.
+This repository contains four end-to-end Machine Learning projects developed during the **IEEE AI/ML/DL Internship Program**.
 
 ---
 
