@@ -28,7 +28,7 @@ Customer_Segmentation/
 ├── dataset/
 │   └── Mall_Customers.csv        # Source dataset
 └── models/
-└── kmeans_model.pkl          # Saved K-Means model
+    └── kmeans_model.pkl          # Saved K-Means model
 ```
 ## 🛠️ Tech Stack
 `Python` · `Streamlit` · `Scikit-Learn` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `SciPy` · `Joblib`
