@@ -45,7 +45,7 @@ Detects plant diseases from leaf images using a trained Convolutional Neural Net
 
 Predicts Data Science salaries based on job role, experience level, employment type, company size, and remote work ratio.
 
-📁 [View Project →](./salary_predictor/salary_predictor/)
+📁 [View Project →](./salary_predictor/)
 
 ---
 
