@@ -1,174 +1,67 @@
 # 🩺 Diabetes Risk Prediction Web Application
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://diabetespredictiongit-inql8uanwywdaxkf5wwjnb.streamlit.app)
+A Machine Learning web application that predicts whether a patient is at **risk of diabetes** based on clinical health parameters.
 
 ## 🚀 Live Application
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://diabetespredictiongit-inql8uanwywdaxkf5wwjnb.streamlit.app)
 
-**Access the deployed application here:**
-
-https://diabetespredictiongit-inql8uanwywdaxkf5wwjnb.streamlit.app
-
----
+👉 **[Open Live App](https://diabetespredictiongit-inql8uanwywdaxkf5wwjnb.streamlit.app)**
 
 ## 📌 Project Overview
+Developed as part of the **IEEE AI/ML/DL Internship Program**.
+Predicts diabetes risk using a trained classification model, with a probability score, risk level meter, and health recommendations.
 
-This project was developed as part of the IEEE AI/ML/DL Internship Program.
+## 📥 Input Parameters
+| Parameter | Description |
+|---|---|
+| Pregnancies | Number of pregnancies |
+| Glucose | Plasma glucose concentration |
+| Blood Pressure | Diastolic blood pressure (mm Hg) |
+| Skin Thickness | Triceps skin fold thickness (mm) |
+| Insulin | 2-Hour serum insulin (mu U/ml) |
+| BMI | Body mass index |
+| Diabetes Pedigree Function | Genetic likelihood score |
+| Age | Age in years |
 
-The application predicts whether a patient is at risk of diabetes using Machine Learning classification techniques based on health parameters provided by the user.
+## 📤 Output
+- ✅ Diabetes Risk Prediction (Diabetic / Non-Diabetic)
+- 📊 Probability Score
+- 🔴 Risk Level Meter
+- 💊 Personalized Health Recommendations
+- 📈 BMI Category Analysis
 
-The system accepts the following inputs:
+## 🤖 Model Performance
+| Model | Accuracy |
+|---|---|
+| **Logistic Regression** ✅ | **76.62%** |
+| Random Forest Classifier | 75.97% |
 
-* Number of Pregnancies
-* Glucose Level
-* Blood Pressure
-* Skin Thickness
-* Insulin Level
-* BMI
-* Diabetes Pedigree Function
-* Age
+**Selected:** Logistic Regression — highest accuracy on the test set.
 
-The application then provides:
-
-* Diabetes Risk Prediction
-* Probability Score
-* Risk Level
-* Health Recommendations
-
----
-
-## 🤖 Machine Learning Models
-
-The following models were trained and evaluated:
-
-1. Logistic Regression
-2. Random Forest Classifier
-
-### Model Comparison
-
-| Model                    | Accuracy |
-| ------------------------ | -------- |
-| Logistic Regression      | 76.62%   |
-| Random Forest Classifier | 75.97%   |
-
-### Selected Model
-
-**Logistic Regression**
-
-Reason: Achieved the highest accuracy on the test dataset.
-
----
-
-## 📊 Dataset
-
-Dataset Used:
-
-**Pima Indians Diabetes Dataset**
-
-Features:
-
-* Pregnancies
-* Glucose
-* BloodPressure
-* SkinThickness
-* Insulin
-* BMI
-* DiabetesPedigreeFunction
-* Age
-
-Target Variable:
-
-* Outcome (0 = Non-Diabetic, 1 = Diabetic)
-
----
-
-## 🛠 Technologies Used
-
-* Python
-* Streamlit
-* Scikit-Learn
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Joblib
-
----
-
-## 📂 Project Structure
-
-```text
+## 🗂️ Project Structure
+```
 Diabetes_Prediction/
-│
-├── app.py
-├── requirements.txt
-│
+├── app.py                       # Streamlit web application
+├── requirements.txt             # Python dependencies
 ├── dataset/
-│   └── diabetes.csv
-│
+│   └── diabetes.csv             # Pima Indians Diabetes Dataset
 ├── models/
-│   ├── diabetes_model.pkl
-│   └── scaler.pkl
-│
+│   ├── diabetes_model.pkl       # Trained Logistic Regression model
+│   └── scaler.pkl               # Feature scaler
 └── notebooks/
-    └── diabetes_analysis.ipynb
+    └── diabetes_analysis.ipynb  # EDA + model training notebook
 ```
+## 🛠️ Tech Stack
+`Python` · `Streamlit` · `Scikit-Learn` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `Joblib`
 
----
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone <repository-url>
-```
-
-Navigate to the project folder:
-
+## ⚙️ How to Run
 ```bash
 cd Diabetes_Prediction
-```
-
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
 streamlit run app.py
 ```
 
----
-
-## 📷 Application Features
-
-✅ Diabetes Risk Prediction
-
-✅ Probability Score
-
-✅ Risk Meter
-
-✅ BMI Category Analysis
-
-✅ Health Recommendations
-
-✅ Interactive Dashboard
-
-✅ Dark / Light Mode Support
-
----
-
-## 🎯 Project Outcome
-
-A complete end-to-end Machine Learning solution was developed that:
-
-* Performs diabetes risk prediction.
-* Compares multiple classification algorithms.
-* Deploys the best-performing model.
-* Provides predictions through a professional web application.
-
----
-
+## 📊 Dataset
+**Pima Indians Diabetes Dataset**
+- 768 patient records
+- Target: `Outcome` — 0 = Non-Diabetic, 1 = Diabetic
