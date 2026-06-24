@@ -20,14 +20,16 @@ Uses unsupervised learning to discover hidden customer groups, helping businesse
 - 📈 K-Means vs Hierarchical model comparison
 
 ## 🗂️ Project Structure
+```
 Customer_Segmentation/
-├── app.py                    
-├── requirements.txt              
-├── Customer_Segmentation.ipynb  
+├── app.py                        # Streamlit web application
+├── requirements.txt              # Python dependencies
+├── Customer_Segmentation.ipynb   # EDA + model training notebook
 ├── dataset/
-│   └── Mall_Customers.csv        
+│   └── Mall_Customers.csv        # Source dataset
 └── models/
-└── kmeans_model.pkl         
+└── kmeans_model.pkl          # Saved K-Means model
+```
 ## 🛠️ Tech Stack
 `Python` · `Streamlit` · `Scikit-Learn` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `SciPy` · `Joblib`
 
